@@ -1,0 +1,21 @@
+{
+  "id": "app",
+  "name": "testingbarcode",
+  "startScreen": "app.barcode",
+  "screens": [
+    {
+      "id": "barcode",
+      "name": "Barcode",
+      "sourceScreenId": "app.barcode",
+      "sourceAppId": "Barcode"
+    },
+    {
+      "id": "howto",
+      "name": "HowTo",
+      "sourceScreenId": "app.howto",
+      "sourceAppId": "Barcode"
+    }
+  ],
+  "sourceAppId": "Barcode",
+  "sourceScreenId": "app"
+}
