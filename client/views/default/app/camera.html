@@ -1,0 +1,45 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-navicon" data-comp-id="button.1"></button>
+        </ion-nav-buttons>
+        <ion-nav-title data-comp-id="nav-title.1">Camera</ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon ion-home" data-comp-id="button.2"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content data-comp-id="ionic-content.1">
+        <label class="item" data-comp-id="customPhoto.1"
+            ng-class="{'item-input item-button-right': style === 'control'}"
+            take-photo="control">
+            <span class="input-label" ng-if="style === 'control'">Custom Photo</span>
+            <button class="button button-icon" ng-if="style === 'control'">
+                <i class="icon positive-icon ion-camera" style="font-size: 24px;"></i>
+            </button>
+            <input disabled="" ng-if="style === 'control'" type="text">
+            <input disabled="" ng-if="style === 'control'" type="text">
+            <button class="button button-block button-positive nomargin"
+                ng-if="style === 'button'">Custom Photo</button>
+            <textarea class="not-visible" ng-model="app.data.mydata"></textarea>
+        </label>
+        <div ng-if="data.isCaptured" style="text-align:center;">
+            <span ng-bind="data.captureStatus" style=" margin-right:5px"></span>
+            <i class="icon ion-ios-close-empty" data-comp-id="icon.1"
+                ng-click="data.isCaptured = false"
+                style="float: none; font-size: 24px; color: rgb(102, 102, 102);"></i>
+        </div>
+    </ion-content>
+    <div class="footer-button-bar" data-comp-id="footer-bar-buttons.1"
+        dynamic-floating-footer=""
+        style="background-color: rgb(238, 238, 238); border-top: 1px solid rgb(221, 221, 221); padding: 0px;">
+        <div class="row" data-comp-id="row.1" style="margin: 0px; padding: 0px;">
+            <div class="col col-10" data-comp-id="column.1"></div>
+            <div class="col" data-comp-id="column.2">
+                {{redval}}
+                <button class="button button-block button-positive " data-comp-id="button.3"
+                    ng-click="sendAndCreate()" style="border-color: rgba(255, 255, 255, 0);">&nbsp;&nbsp;&nbsp;Submit</button>
+            </div>
+            <div class="col col-10" data-comp-id="column.3"></div>
+        </div>
+    </div>
+</ion-view>

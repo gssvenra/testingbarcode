@@ -24,5 +24,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.camera', {
+        views: {
+            app: {
+                controller: 'app_camera',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.camera');
+                }
+            }
+        }
     });
 });
