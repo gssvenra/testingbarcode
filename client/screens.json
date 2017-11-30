@@ -14,12 +14,6 @@
       "name": "HowTo",
       "sourceScreenId": "app.howto",
       "sourceAppId": "Barcode"
-    },
-    {
-      "id": "camera",
-      "name": "Camera",
-      "sourceScreenId": "app.camera",
-      "sourceAppId": "Camera"
     }
   ],
   "sourceAppId": "Barcode",
